@@ -8,6 +8,18 @@
 export function doesArrayInclude(array, value) {
   // Your code goes here...
 
+  let included;
+
+  for (let i = 0; i < array.length; i++) {
+    if (array[i].indexOf(value) === -1) {
+      included = false; 
+    } else {
+      included = true;
+    }
+  }
+
+  return included;
+
 }
 
 
